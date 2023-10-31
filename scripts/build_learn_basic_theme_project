@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# To be launched from project root
+
+sphinx-build -b html -q learn_basic_theme_project/ public/learn_basic_theme_project

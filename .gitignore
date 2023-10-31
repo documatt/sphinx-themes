@@ -1,0 +1,22 @@
+# Python
+.venv/
+__pycache__
+*.egg-info
+build
+dist
+_build
+
+# NPM
+node_modules
+npm-debug.log
+.sass-cache
+.npm-cache
+
+# Will be compiled
+css
+js
+
+# IDEs & etc.
+.vscode/
+
+.DS_Store

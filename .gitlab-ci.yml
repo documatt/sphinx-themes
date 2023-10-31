@@ -1,0 +1,63 @@
+stages:
+  - build_themes
+  - docs
+  - deploy
+
+build_themes:
+  stage: build_themes
+  image: node:latest
+  cache:
+    paths:
+      - .npm-cache
+  script:
+    - scripts/build_theme sphinx_documatt_theme
+  artifacts:
+    paths:
+      - sphinx_documatt_theme
+
+build_demos:
+  stage: docs
+  image: python:3.6
+  variables:
+    PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+  cache:
+    paths:
+      - .cache/pip
+      - venv
+  script:
+    - python3 -m venv venv
+    - source venv/bin/activate
+    - pip3 install -r requirements.txt
+    - scripts/build_learn_basic_theme_project
+    - scripts/build_theme_demo sphinx_documatt_theme
+  artifacts:
+    paths:
+      - public
+
+build_docs:
+  stage: docs
+  image: python:3.6
+  variables:
+    PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+  cache:
+    paths:
+      - .cache/pip
+      - venv
+  script:
+    - python3 -m venv venv
+    - source venv/bin/activate
+    - pip3 install -r requirements.txt
+    - scripts/build_docs
+  artifacts:
+    paths:
+      - public
+
+pages:
+  stage: deploy
+  script:
+    - echo "deploying to pages"
+  only:
+    - master
+  artifacts:
+    paths:
+      - public

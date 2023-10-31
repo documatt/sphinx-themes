@@ -1,0 +1,236 @@
+// Theme styles here
+
+/*
+// Set your own initial variables, set the derived variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #ff8080;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+*/
+
+// *** Fonts ******************************************************************
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+$family-primary: 'Playfair Display', serif;
+
+
+// *** Colors *****************************************************************
+
+$dm-blue: #0c7cba;
+$primary: $dm-blue;
+$mocca: rgb(245, 243, 240);
+
+.has-background-mocca {
+  background: $mocca;
+}
+
+.has-text-mocca {
+  color: $mocca;
+}
+
+// *** Footer *****************************************************************
+
+$footer-background-color: $mocca;
+$footer-padding: 3rem 1.5rem 3rem;
+
+footer.footer {
+  margin-top: 3rem;
+  // identical box-shadow as breadcrumb, just flipped
+  box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, .1), 0 -1px 2px 0 rgba(0, 0, 0, .06) !important;
+
+}
+
+.footer-text a {
+  color: $primary;
+  text-decoration: none;
+  border-bottom: 2px solid $primary;
+}
+
+// *** Navbar *****************************************************************
+
+$navbar-item-active-color: $primary;
+$navbar-item-hover-color: $primary;
+$navbar-item-active-background-color: hsl(0, 0%, 98%);
+$navbar-height: 6rem;
+
+.navbar-item {
+  font-size: $size-5;
+  text-decoration: none !important;
+
+  // allows arbitrary shrink logo
+  img {
+    max-height: none !important;
+  }
+
+  &.is-active {
+    font-weight: $weight-semibold;
+  }
+}
+
+// *** Breadcrumb *************************************************************
+
+$breadcrumb-item-padding-horizontal: 0.75rem;
+$breadcrumb-item-padding-vertical: 0.75rem;
+
+nav.breadcrumb {
+  background: $mocca;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06) !important;
+}
+
+// No underline in active breadcrumb item
+nav.breadcrumb li.is-active a {
+  text-decoration: none !important;
+}
+
+nav.breadcrumb li.is-active::before {
+    padding: 0.75rem 0.75rem 0.75rem 0;
+}
+
+
+// *** Links ******************************************************************
+
+$link: $grey-dark;
+$link-hover: $grey;
+
+a {
+  //font-weight: bold;
+  text-decoration: underline;
+}
+
+// No underline in active breadcrumb item
+nav.breadcrumb li.is-active a {
+  text-decoration: none !important;
+}
+
+// Site cover links
+.site-cover a {
+  text-decoration: none !important;
+  color: $primary;
+
+  &:hover {
+    color: rgba($primary, 0.8); // bit lighter than $primary
+  }
+}
+
+// *** Articles ***************************************************************
+
+.article-list {
+  padding-bottom: 0 !important;
+
+  article {
+    margin-bottom: 3rem !important;
+  }
+}
+
+// *** Buttons ****************************************************************
+
+$button-family: $family-monospace;
+
+// *** Site hero **************************************************************
+
+.site-hero {
+  margin-bottom: 1.5rem;
+
+  .title {
+    color: $primary;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .motto {
+    margin-top: 1.5rem !important;
+
+    a {
+      text-decoration: none;
+      border-bottom: 2px solid $primary;
+    }
+  }
+
+  a {
+    color: $primary;
+
+    &:hover {
+      color: rgba($primary, 0.8); // bit lighter than $primary
+    }
+  }
+}
+
+
+// *** Sidebars ***************************************************************
+
+// Right sidebar - local TOC
+.localtoc {
+  // Remove the current page title. Markup is:
+  // <ul>                                      <1>
+  //   <li>                                    <2>
+  //     <a>name of this page</a>              <3>
+  //     <ul>                                  <4>
+  //       ... actual toc ...
+  //     </ul>
+  //   </li>
+  &> ul {                                 // <1>
+    // fix: should not be required to !important
+    margin: 0 !important;
+
+    &> li {                               // <2>
+      list-style-type: none;
+
+      &> a {                              // <3>
+        display: none;
+      }
+
+      &> ul {                             // <4>    ul for L2
+        list-style-type: circle;
+        margin-left: 0;
+        
+        &> li > a {                       // L2 sections
+        }
+
+        &> li > ul > li > a {             // L3 sections
+          font-size: 90%;
+        }
+
+        &> li > ul > li > ul a {          // L4 or deeper sections
+            font-size: 80%;
+        }
+
+        ul {                              // ul for L3 or deeper
+          margin-left: 1em;
+        }
+      }
+    }
+  }
+}
+
+.globaltoc {
+  // toctree :caption:
+  .caption-text {
+    text-transform: uppercase;
+  }
+
+  // top-most <ul>s
+  &> ul {
+    // fix: should not be required to !important
+    margin-left: 0 !important;
+    list-style-type: circle !important;
+  }
+
+  // current document
+  a.current {
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #a4a4a4;
+  }
+}

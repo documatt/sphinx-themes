@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# To be launched from project root
+
+theme=$1
+
+cd "$theme/$theme"
+npm install --cache ../../.npm-cache --prefer-offline
+npm run deploy
+cd ../..
