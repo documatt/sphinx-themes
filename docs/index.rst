@@ -36,21 +36,13 @@ Default theme for `Documatt.com <https://documatt.com>`_ projects.
 * See `demo project with this theme </demo/sphinx_documatt_theme>`_.
 * See `theme in action <https://techwriter.documatt.com>`_.
 
-Resources
----------
-
-Except themes, there are two Sphinx projects - ``demo_sphinx_project`` is showcase of all existing reStructuredText and Sphinx syntax useful for e.g. testing themes, and ``learn_basic_theme_project`` is helpful for learning to develop new themes.
+.. tip:: Wanna create own Sphinx theme? Checkout our Sphinx Theming Guide at https://techwriter.documatt.com/sphinx-theming/index.html.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Helper projects
+   :caption: Etc.
 
-   demo-sphinx-project
-   learn-basic-theme
    development
-
-.. tip:: Wanna create own Sphinx theme? Checkout our Sphinx Theming Guide at https://techwriter.documatt.com/sphinx-theming/index.html.
-
 
 Indices and tables
 ------------------

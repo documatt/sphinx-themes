@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-# To be launched from project root
-
-theme=$1
-
-sphinx-build -b html -D html_theme="$theme" -D html_theme_path=../"$theme" -q demo_sphinx_project/ public/demo/"$theme"
