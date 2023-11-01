@@ -7,10 +7,10 @@
 .. image:: icons8-change-theme-64.png
    :align: right
 
-Documatt Sphinx Themes is continuously growing collection of themes for Sphinx documentation projects. Our aim is to provide high quality themes suitable both for documentation and prose. Themes are primary targeted to `Documatt.com <https://documatt.com>`_ users, but anyone is welcome to use it with any Sphinx project.
+|project| is a collection of themes for `Sphinx documentation <https://www.sphinx-doc.org/>`_ projects. The aim is to provide high quality themes suitable both for documentation and prose. Themes are primary targeted to `Documatt.com <https://documatt.com>`_ users, but anyone is welcome to use it with any Sphinx project.
 
-* Documentation and available themes at https://documatt.gitlab.io/sphinx-themes
-* The project is hosted at GitLab URL https://gitlab.com/documatt/sphinx-themes/, where are issues and contributions welcomed too.
+* Docs: https://documatt.com/sphinx-themes/ (and list of available themes)
+* Sources: https://github.com/documatt/sphinx-themes, where are issues and contributions welcomed too.
 
 *********
 Impressum

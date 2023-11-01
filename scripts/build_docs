@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-# To be launched from project root
-
-theme=sphinx_documatt_theme
-
-sphinx-build -b html -q docs/ public/

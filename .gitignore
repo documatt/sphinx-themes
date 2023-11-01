@@ -1,22 +1,27 @@
-# Python
+# Python and Sphinx
 .venv/
 __pycache__
 *.egg-info
 build
-dist
 _build
+_site
+.doctrees
+.doctree
+.tox
 
-# NPM
+# Node
 node_modules
 npm-debug.log
 .sass-cache
 .npm-cache
+dist
 
-# Will be compiled
-css
-js
+# Will be compiled by Bulma start
+sphinx_*_theme/**/static/css
+sphinx_*_theme/**/static/js
 
 # IDEs & etc.
 .vscode/
 
+# macOS
 .DS_Store

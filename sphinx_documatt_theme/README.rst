@@ -2,15 +2,16 @@
 Documatt Sphinx Theme
 #####################
 
-Mobile friendly Sphinx theme designed to provide great documentation reading experience with beautiful typography.
+Reader friendly Sphinx theme designed to provide great documentation reading experience with a beautiful typography.
 
-This theme is default theme of Documatt's `Techwriter at work blog <https://techwriter.documatt.com>`_ but you are welcome to use it with any Sphinx project.
+This theme is default theme of `Documatt's open-source projects <https://github.com/documatt>`_ but you are welcome to use it with any Sphinx project.
 
-.. rubric:: Documentation https://documatt.gitlab.io/sphinx-themes/themes/documatt.html
+* Docs: https://documatt.com/sphinx-themes/themes/documatt.html
+* Sources: https://github.com/documatt/sphinx-themes/, where are issues and contributions welcomed too.
 
 .. absolute image URL because it will be embedded also to PyPI
 
-.. image:: https://gitlab.com/documatt/sphinx-themes/-/raw/master/sphinx_documatt_theme/screenshot.png?inline=false
+.. image:: https://raw.githubusercontent.com/documatt/sphinx-themes/main/sphinx_documatt_theme/screenshot.png
 
 *********
 Impressum

@@ -4,7 +4,13 @@
 
 theme=$1
 
+# Node part
+
 cd "$theme/$theme"
 npm install --cache ../../.npm-cache --prefer-offline
 npm run deploy
-cd ../..
+
+# Python part
+cd ..
+rm -rf dist
+python -m build

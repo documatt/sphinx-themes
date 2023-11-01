@@ -2,9 +2,9 @@
 Documatt Theme
 ##############
 
-Mobile friendly Sphinx theme designed to provide great documentation reading experience with beautiful typography.
+Reader friendly Sphinx theme designed to provide great documentation reading experience with a beautiful typography.
 
-This theme is default theme of Documatt's `Techwriter at work blog <https://techwriter.documatt.com>`_ but you are welcome to use it with any Sphinx project.
+This theme is default theme of `Documatt's open-source projects <https://github.com/documatt>`_ but you are welcome to use it with any Sphinx project.
 
 .. image:: img/documatt/screenshot.png
 
@@ -244,7 +244,7 @@ The full example may look::
         src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?theme=grey&tracking=1&thirdparty=1&always=1&hideDetailsBtn=1&showPolicyLink=1&privacyPage=https%3A%2F%2Fdocumatt.com%2Fabout%2Flegal%2Fprivacy%2F"></script>
     {% endblock %}
 
-Open `theme's layout.html <https://gitlab.com/documatt/sphinx-themes/-/blob/master/sphinx_documatt_theme/sphinx_documatt_theme/layout.html>`_ to see all blocks you can override.
+Open `theme's layout.html <https://github.com/documatt/sphinx-themes/blob/main/sphinx_documatt_theme/sphinx_documatt_theme/layout.html>`_ to see all blocks you can override.
 
 *********
 Changelog
@@ -256,24 +256,24 @@ Changelog
 
 .. versionadded:: 0.0.5
 
-- globaltoc as left sidebar configurable as standard html_sidebars (Sphinx sidebars)
-- localtoc as right sidebar configurable via html_options's right_sidebars variable
-- update to Bulma 0.9.2
-- wrap long lines in code examples
-- css for line numbered code examples
-- no underline for L2 sections
-- small CSS fixes
-- theme name and version as ``<meta itemprop>``
+   - globaltoc as left sidebar configurable as standard html_sidebars (Sphinx sidebars)
+   - localtoc as right sidebar configurable via html_options's right_sidebars variable
+   - update to Bulma 0.9.2
+   - wrap long lines in code examples
+   - css for line numbered code examples
+   - no underline for L2 sections
+   - small CSS fixes
+   - theme name and version as ``<meta itemprop>``
 
 .. versionadded:: 0.0.4
 
-* Theme options header_text_style, footer_text_style.
-* Many CSS fixes: headers, header permalinks, toctree, code examples, :file:, :kdb:
+   - Theme options header_text_style, footer_text_style.
+   - Many CSS fixes: headers, header permalinks, toctree, code examples, :file:, :kdb:
 
 .. versionadded:: 0.0.3
 
-* Theme options cover_image, cover_image_style, header_text, header_logo_style, footer_text, and footer_logo_style.
-* Header logo and cover title refer to master_doc.
-* Empty navbarmenu block.
-* External link icon stored locally.
-* Fixed clearing structural elements before floated images.
+   - Theme options cover_image, cover_image_style, header_text, header_logo_style, footer_text, and footer_logo_style.
+   - Header logo and cover title refer to master_doc.
+   - Empty navbarmenu block.
+   - External link icon stored locally.
+   - Fixed clearing structural elements before floated images.

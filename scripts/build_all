@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-# To be launched from project root
-
-theme=$1
-
-rm -rf public && scripts/build_theme "$theme" && scripts/build_theme_demo "$theme"

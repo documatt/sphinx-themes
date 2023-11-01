@@ -33,16 +33,16 @@ sphinx_documatt_theme
 Default theme for `Documatt.com <https://documatt.com>`_ projects.
 
 * See :doc:`theme docs <themes/documatt>`.
-* See `demo project with this theme </demo/sphinx_documatt_theme>`_.
-* See `theme in action <https://techwriter.documatt.com>`_.
-
-.. tip:: Wanna create own Sphinx theme? Checkout our Sphinx Theming Guide at https://techwriter.documatt.com/sphinx-theming/index.html.
+* See `theme in action <https://documatt.com/sphinx-themes>`_ (this website uses it).
 
 .. toctree::
    :maxdepth: 2
    :caption: Etc.
+   :hidden:
 
    development
+
+.. tip:: Wanna create own Sphinx theme? Checkout our Sphinx Theming Guide at https://documatt.com/blog/20/sphinx-themes.
 
 Indices and tables
 ------------------
