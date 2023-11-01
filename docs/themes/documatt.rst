@@ -250,6 +250,10 @@ Open `theme's layout.html <https://gitlab.com/documatt/sphinx-themes/-/blob/mast
 Changelog
 *********
 
+.. versionchanged:: 0.0.6
+
+   - Compatibility with Sphinx 7.x: Since `removal of style key in HTML templates <https://github.com/sphinx-doc/sphinx/issues/11381>`_ in 7.0.0, build has failed with ``Reason: UndefinedError("'style' is undefined")`` error.
+
 .. versionadded:: 0.0.5
 
 - globaltoc as left sidebar configurable as standard html_sidebars (Sphinx sidebars)

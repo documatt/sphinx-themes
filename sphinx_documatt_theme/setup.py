@@ -2,11 +2,11 @@ from setuptools import setup
 
 setup(
     name='sphinx_documatt_theme',
-    version='0.0.5',
-    url='https://documatt.gitlab.io/sphinx-themes/themes/documatt.html',
-    license='MIT',
-    author='Matt from Documatt',
-    author_email='matt@documatt.com',
+    version='0.0.6',
+    url='http://documatt.com/sphinx-themes/themes/documatt.html',
+    license='BSD3',
+    author='Documatt.com',
+    author_email='hello@documatt.com',
     description='Documatt Theme for Sphinx documentation projects',
     long_description=open('README.rst', encoding='utf-8').read(),
     packages=['sphinx_documatt_theme'],
