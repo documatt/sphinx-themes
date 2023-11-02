@@ -31,7 +31,7 @@ extensions = [
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-# templates_path = ['_templates']
+templates_path = ['_templates']
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -47,8 +47,9 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = 'sphinx_documatt_theme'
 html_theme_path = ['../sphinx_documatt_theme']
 html_theme_options = {
-    'motto': 'Continuously growing collection of themes for Sphinx documentation projects. Themes suitable both for documentation and prose.',
+    'motto': 'A collection of themes for the Sphinx documentation projects. Themes suitable both for a documentation and a prose.',
     'header_text': project,
+
     'header_logo_style': 'width: 3rem; margin-right: 1rem;',
     'footer_logo_style': 'width: 3rem;'
 }
