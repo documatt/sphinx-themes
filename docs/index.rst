@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Documatt Sphinx Themes Collection's documentation!
-=============================================================
+Welcome to Documatt Sphinx Themes!
+==================================
 
 Documatt Sphinx Themes is continuously growing collection of themes for Sphinx documentation projects. Our aim is to provide high quality themes suitable both for documentation and prose. Themes are primary targeted to `Documatt.com <https://documatt.com>`_ users, but anyone is welcome to use it with any Sphinx project.
 

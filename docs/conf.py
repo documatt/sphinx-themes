@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Documatt Sphinx Themes Collection'
+project = 'sphinx-themes'
 copyright = '2023, Documatt.com'
 author = 'Documatt.com'
 
