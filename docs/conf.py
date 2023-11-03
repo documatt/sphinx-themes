@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Documatt Sphinx Themes Collection'
-copyright = '2021, Documatt.com'
+copyright = '2023, Documatt.com'
 author = 'Documatt.com'
 
 
@@ -28,6 +28,7 @@ author = 'Documatt.com'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    "sphinx_sitemap"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -41,9 +42,9 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # -- Options for HTML output -------------------------------------------------
 
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
-#
+html_baseurl = 'https://documatt.com/sphinx-themes/'
+html_extra_path = ['robots.txt']
+
 html_theme = 'sphinx_documatt_theme'
 html_theme_path = ['../sphinx_documatt_theme']
 html_theme_options = {
@@ -59,6 +60,11 @@ html_logo = html_favicon = '../icons8-change-theme-64.png'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 # html_static_path = ['_static']
+
+# --- Options for sphinx-sitemap ---------------------------------------------
+
+# No lang code in generated URLs
+sitemap_url_scheme = "{link}"
 
 
 def setup(app):
